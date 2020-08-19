@@ -36,7 +36,7 @@
             this.lstProdutos = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picFotos = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pnlCardapio = new System.Windows.Forms.Panel();
@@ -49,7 +49,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).BeginInit();
             this.pnlCardapio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -130,14 +130,15 @@
             this.lblTotal.Visible = false;
             this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
-            // pictureBox2
+            // picFotos
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(45, 235);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(92, 111);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picFotos.Location = new System.Drawing.Point(45, 235);
+            this.picFotos.Name = "picFotos";
+            this.picFotos.Size = new System.Drawing.Size(92, 111);
+            this.picFotos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotos.TabIndex = 7;
+            this.picFotos.TabStop = false;
+            this.picFotos.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button1
             // 
@@ -271,7 +272,7 @@
             this.Controls.Add(this.pnlCardapio);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picFotos);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstProdutos);
@@ -283,7 +284,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).EndInit();
             this.pnlCardapio.ResumeLayout(false);
             this.pnlCardapio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).EndInit();
@@ -302,7 +303,7 @@
         private System.Windows.Forms.ListBox lstProdutos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picFotos;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel pnlCardapio;

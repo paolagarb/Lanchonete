@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace Lanchonete
         string[] nome = new string[5] { "SALGADO", "SUCO NATURAL", "REFRIGERANTE", "TORTA DOCE", "PASTEL" };
         double[] preco = new double[5] { 4.50, 3.50, 4.00, 5.00, 4.50 };
 
+        double total = 0.00;
 
 
         public Form1()
@@ -51,9 +53,6 @@ namespace Lanchonete
                 cardapio.Add(new Item(codigo[i], nome[i], preco[i]));
             }
 
-
-
-            double total = 0.00;
             if (txtProduto.Text.Length == 3)
             {
                 if (txtProduto.Text == "001")
@@ -61,30 +60,35 @@ namespace Lanchonete
                     lstProdutos.Items.Add(cardapio[0]);
                     Adicionado();
                     total += 4.50;
+                    picFotos.ImageLocation = "C:/Users/paola/OneDrive/Área de Trabalho/C-Sharp W.Forms/Lanchonete/Fotos/Salgado.jpg";
                 }
                 else if (txtProduto.Text == "002")
                 {
                     lstProdutos.Items.Add(cardapio[1]);
                     Adicionado();
                     total += 3.50;
+                    picFotos.ImageLocation = "C:/Users/paola/OneDrive/Área de Trabalho/C-Sharp W.Forms/Lanchonete/Fotos/Suco_natural.jpg";
                 }
                 else if (txtProduto.Text == "003")
                 {
                     lstProdutos.Items.Add(cardapio[2]);
                     Adicionado();
                     total += 4.00;
+                    picFotos.ImageLocation = "C:/Users/paola/OneDrive/Área de Trabalho/C-Sharp W.Forms/Lanchonete/Fotos/refrigerante.jpg";
                 }
                 else if (txtProduto.Text == "004")
                 {
                     lstProdutos.Items.Add(cardapio[3]);
                     Adicionado();
                     total += 5.00;
+                    picFotos.ImageLocation = "C:/Users/paola/OneDrive/Área de Trabalho/C-Sharp W.Forms/Lanchonete/Fotos/Torta_doce.jpg";
                 }
                 else if (txtProduto.Text == "005")
                 {
                     lstProdutos.Items.Add(cardapio[4]);
                     Adicionado();
                     total += 4.50;
+                    picFotos.ImageLocation = "C:/Users/paola/OneDrive/Área de Trabalho/C-Sharp W.Forms/Lanchonete/Fotos/Pastel.jpg";
                 }
                 else
                 {
@@ -95,9 +99,8 @@ namespace Lanchonete
             {
                 MessageBox.Show("Código inválido. Verifique o cardápio.", "Inválido");
             }
-
-            lblTotal.Text = "R$ " + total.ToString();
-
+            lblTotal.Visible = true;
+            lblTotal.Text = "R$ " + total.ToString("F2", CultureInfo.InvariantCulture);
         }
 
         private void lstProdutos_SelectedIndexChanged(object sender, EventArgs e)
