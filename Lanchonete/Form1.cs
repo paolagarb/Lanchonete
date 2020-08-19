@@ -16,5 +16,10 @@ namespace Lanchonete
         {
             InitializeComponent();
         }
+
+        private void lblTotal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
