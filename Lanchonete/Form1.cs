@@ -16,7 +16,7 @@ namespace Lanchonete
         string[] codigo = new string[5] { "001", "002", "003", "004", "005" };
         string[] nome = new string[5] { "SALGADO", "SUCO NATURAL", "REFRIGERANTE", "TORTA DOCE", "PASTEL" };
         double[] preco = new double[5] { 4.50, 3.50, 4.00, 5.00, 4.50 };
-
+        List<Item> cardapio = new List<Item>();
         double total = 0.00;
 
 
@@ -47,7 +47,7 @@ namespace Lanchonete
 
         private void txtProduto_TextChanged(object sender, EventArgs e)
         {
-            List<Item> cardapio = new List<Item>();
+            //List<Item> cardapio = new List<Item>();
             for (int i = 0; i <= 4; i++)
             {
                 cardapio.Add(new Item(codigo[i], nome[i], preco[i]));
@@ -113,14 +113,29 @@ namespace Lanchonete
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRemover_Click(object sender, EventArgs e)
         {
+            string produto = (lstProdutos.SelectedItem).ToString();
+            string preco = produto.Substring(produto.Length-4);
+            double preco1 = Double.Parse(preco, CultureInfo.InvariantCulture);
 
+            if (lstProdutos.SelectedItem != null)
+            {
+                lstProdutos.Items.Remove(lstProdutos.SelectedItem);
+               
+                total -= preco1;
+
+                lblTotal.Text = total.ToString("F2", CultureInfo.InvariantCulture);
+
+            }
+          
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
-
+            txtProduto.Text = "";
+            lstProdutos.Items.Clear();
+            picFotos.Visible = false;
         }
 
         private void Adicionado()

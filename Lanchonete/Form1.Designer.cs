@@ -37,22 +37,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.picFotos = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.pnlCardapio = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pctCardapio = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotos)).BeginInit();
             this.pnlCardapio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,29 +140,29 @@
             this.picFotos.TabStop = false;
             this.picFotos.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // button1
+            // btnRemover
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(159, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 36);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "REMOVER";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRemover.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRemover.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(159, 235);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(118, 36);
+            this.btnRemover.TabIndex = 8;
+            this.btnRemover.Text = "REMOVER";
+            this.btnRemover.UseVisualStyleBackColor = false;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
-            // button2
+            // btnLimpar
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(159, 277);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 37);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "LIMPAR";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnLimpar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLimpar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(159, 277);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(118, 37);
+            this.btnLimpar.TabIndex = 9;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // pnlCardapio
             // 
@@ -179,6 +179,67 @@
             this.pnlCardapio.Size = new System.Drawing.Size(253, 255);
             this.pnlCardapio.TabIndex = 10;
             this.pnlCardapio.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(21, 205);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(215, 20);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "005      PASTEL                R$ 4.50";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(21, 173);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(216, 20);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "004      TORTA DOCE        R$ 5.00";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(19, 141);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(215, 20);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "003      REGRIGERANTE   R$ 4.00";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(21, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(213, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "002     SUCO NATURAL    R$ 3.50";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(21, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "001     SALGADO             R$ 4.50";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(220, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label4
             // 
@@ -201,67 +262,6 @@
             this.pctCardapio.TabStop = false;
             this.pctCardapio.Click += new System.EventHandler(this.pctCardapio_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(220, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(21, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(211, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "001     SALGADO             R$ 4.50";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(21, 108);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "002     SUCO NATURAL    R$ 3.50";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(19, 141);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "003      REGRIGERANTE   R$ 4.00";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(21, 173);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(216, 20);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "004      TORTA DOCE        R$ 5.00";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(21, 205);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(215, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "005      PASTEL                R$ 4.50";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,8 +270,8 @@
             this.ClientSize = new System.Drawing.Size(320, 370);
             this.Controls.Add(this.pctCardapio);
             this.Controls.Add(this.pnlCardapio);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.picFotos);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label3);
@@ -287,8 +287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFotos)).EndInit();
             this.pnlCardapio.ResumeLayout(false);
             this.pnlCardapio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,8 +304,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.PictureBox picFotos;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Panel pnlCardapio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
