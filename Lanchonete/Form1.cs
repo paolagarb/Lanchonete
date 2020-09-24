@@ -136,6 +136,8 @@ namespace Lanchonete
             txtProduto.Text = "";
             lstProdutos.Items.Clear();
             picFotos.Visible = false;
+            total = 0.00;
+            lblTotal.Text = total.ToString();
         }
 
         private void Adicionado()

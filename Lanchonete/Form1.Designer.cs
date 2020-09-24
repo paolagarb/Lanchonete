@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.lstProdutos = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.picFotos = new System.Windows.Forms.PictureBox();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.pnlCardapio = new System.Windows.Forms.Panel();
@@ -45,14 +42,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pctCardapio = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.picFotos = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlCardapio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,17 +64,6 @@
             this.label1.Size = new System.Drawing.Size(121, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "LancheNet";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(274, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -129,16 +117,6 @@
             this.lblTotal.Text = "R$";
             this.lblTotal.Visible = false;
             this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
-            // 
-            // picFotos
-            // 
-            this.picFotos.Location = new System.Drawing.Point(45, 235);
-            this.picFotos.Name = "picFotos";
-            this.picFotos.Size = new System.Drawing.Size(92, 111);
-            this.picFotos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFotos.TabIndex = 7;
-            this.picFotos.TabStop = false;
-            this.picFotos.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnRemover
             // 
@@ -230,17 +208,6 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "001     SALGADO             R$ 4.50";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(220, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -253,7 +220,7 @@
             // 
             // pctCardapio
             // 
-            this.pctCardapio.Image = ((System.Drawing.Image)(resources.GetObject("pctCardapio.Image")));
+            this.pctCardapio.Image = global::Lanchonete.Properties.Resources.cardapio;
             this.pctCardapio.Location = new System.Drawing.Point(37, 26);
             this.pctCardapio.Name = "pctCardapio";
             this.pctCardapio.Size = new System.Drawing.Size(50, 36);
@@ -261,6 +228,38 @@
             this.pctCardapio.TabIndex = 11;
             this.pctCardapio.TabStop = false;
             this.pctCardapio.Click += new System.EventHandler(this.pctCardapio_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Lanchonete.Properties.Resources.fechar;
+            this.pictureBox4.Location = new System.Drawing.Point(220, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // picFotos
+            // 
+            this.picFotos.Location = new System.Drawing.Point(45, 235);
+            this.picFotos.Name = "picFotos";
+            this.picFotos.Size = new System.Drawing.Size(92, 111);
+            this.picFotos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotos.TabIndex = 7;
+            this.picFotos.TabStop = false;
+            this.picFotos.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lanchonete.Properties.Resources.sair_branco;
+            this.pictureBox1.Location = new System.Drawing.Point(274, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -283,12 +282,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).EndInit();
             this.pnlCardapio.ResumeLayout(false);
             this.pnlCardapio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCardapio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
